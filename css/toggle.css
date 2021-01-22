@@ -1,0 +1,37 @@
+.toggle { 
+        position : relative ; 
+        display : inline-block; 
+        width : 50px; 
+        height : 26px; 
+        background-color: #cccccc; 
+        border-radius: 15px; 
+        border: 2px solid gray; 
+    } 
+            
+    /* After slide changes */
+    .toggle:after { 
+        content: ''; 
+        position: absolute; 
+        width: 25px; 
+        height: 25px; 
+        border-radius: 50%; 
+        background-color: gray; 
+        top: 0.5px;  
+        left: 0.5px; 
+        transition:  all 0.5s; 
+    } 
+            
+    /* Checkbox checked effect */
+    .checkbox:checked + .toggle::after { 
+        left : 24.5px;  
+    } 
+            
+    /* Checkbox cheked toggle label bg color */
+    .checkbox:checked + .toggle { 
+        background-color: #2c7f98; 
+    } 
+            
+    /* Checkbox vanished */
+    .checkbox {  
+        display : none; 
+    } 

@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600;900&family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("index.css");
+@import url("toggle.css");
+
+/*root font-size 16px*/
+html{
+    font-size:16px;
+}
+
+
+/*background image taking up entire viewport*/
+/*body background color set to grey*/
+body{
+    background-image: url("../images/background.jpg");
+    background-color:#cccccc;
+    font-family:"roboto";
+    color: #2f3640;
+    position:absolute;
+    margin:0;
+    padding:0;
+    }
+
+/*header taking up entire width*/
+header {
+    position: fixed;
+    width:100%;
+    background-color: #ffffff;
+    z-index:2;
+}
+
+/*logo transition and animation*/
+#logo {
+    box-sizing:content-box;
+    height: 50px;
+    width: auto;
+    padding:20px 0 0 30px;
+    /*transition-property: height;*/
+    transition: height 1s, transform 1s;
+    }
+    
+#logo:hover {
+  height: 65px;
+  transform: rotate(360deg);
+}
+
+/*bigger logo for desktop and tablet*/
+@media screen and (min-width: 768px) {
+    #logo {
+    height: 100px;
+}
+#logo:hover {
+  height: 150px;
+}
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  color:#2c7f98;
+  overflow: hidden;
+  background-color: #ffffff;
+  float: right;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+  text-decoration: none;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+nav li a {
+  padding: 8px 16px 8px 16px;
+}
+}
+
+nav li a:hover {
+  background-color: #cccccc;
+  text-decoration: none;
+}
+
+
+main{
+   position: relative;
+   margin: 150px 0 200px 0;
+}
+
+@media screen and (min-width: 768px) {
+main{
+   margin: 200px 0 200px 0;
+}
+}
+
+/*headings set to 150% of parent/body font-size*/
+h1, h2 {
+    font-family: "Big Shoulders Stencil Display";
+    font-size:1.5rem;
+    color:#2c7f98;
+}
+
+h3 {
+    font-family: "Roboto";
+    font-size:1.2rem;
+    font-weight:bolder;
+    color:black;
+}
+
+/*bigger font-size and spacing for mobile*/
+p{
+    font-size:1.1rem;
+    line-height:150%;
+}
+
+/*desktop body font-size 16px*/
+@media screen and (min-width: 768px) {
+	p { 
+	   font-size: 1rem;
+	   line-height:normal;
+	   } 
+}
+
+/*all mobile headings with 30px padding+margin*/
+section {
+  margin:15px;
+  padding:5px 15px 20px 15px;
+    
+}
+
+/*all headings with 30px padding and 30px margin*/
+@media screen and (min-width: 768px) {
+section {
+  margin:30px;
+  padding:10px 30px 40px 30px;
+}
+}
+
+.others{
+    background-color:#cccccc;
+    height:auto;
+}
+
+.form{
+    background-color:#cccccc;
+    width: calc(100vw - 100px);
+    margin:30px;
+    padding:20px;
+    height:auto;
+}
+
+.newLine{
+    width:100%
+}
+
+
+.articleBox {
+    background-color:white;
+}
+
+.artImg{
+   width: 100%; 
+   height:auto;
+}
+
+/*footing taking up entire width*/
+footer {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  padding:20px;
+  width:100%;
+  background-color:#2c7f98;
+  line-height:100%;
+  color: white;
+  text-align: center;
+  font-size:0.8rem;
+}
+
+footer h3 {
+    color:white;
+    line-height:1.5;
+}
+
+footer p {
+    font-size:0.75rem;
+}
+
+.buttons{
+    display:inline-block;
+}
+
+#fTrigger, #no {
+    position: relative;
+    color:#2c7f98;
+    background-color:white;
+    border-radius:10px;
+    font-weight:bold;
+    margin:5px;
+    padding:5px;
+    font-size:0.75rem;
+}
+
+
+a:link {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color:inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+table, td, th {
+  border: 2px solid #cccccc;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	text-align:center;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: white;
+}
+
+th {
+	background-color: #2c7f98;
+	color:white;
+}
+
+
+/*reading assistance*/
+#readAsst {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color:white;
+    font-weight:bold;
+    color:#4f2d8f;
+    padding:0;
+    
+}
+
+

@@ -1,0 +1,137 @@
+#welcome{
+    text-align:center;
+    font-size:200%;
+    background-color:#cccccc;
+    color:#2f3640;
+    padding:10px 30px;
+}
+
+#welcome h1 {
+    font-family:"Over the Rainbow";
+    font-size:200%;
+    line-height:110%;
+    font-weight:bold;
+    color:#4f2d8f;
+    }
+
+@media screen and (min-width: 768px) {
+    #welcome h1 {
+    font-size:400%;
+    line-height:80%;
+    }
+}
+
+
+/*bigger font for featured article*/
+#featured{
+    background-color:white;
+    border: 10px solid #0ae5f0;
+    padding-right:calc(5%-10px);
+    padding-left:calc(5%-10px);
+}
+
+
+#featured h2{
+   color:#0ae5f0;
+   font-size:2rem
+}
+
+#featured h3{
+   font-size:1.8rem
+}
+
+#featured p, #welcome p{
+    font-size:1.25rem
+}
+
+
+/*featured article set to 80% of desktop/tablet page*/
+@media screen and (min-width: 768px) {
+        #featured {
+            border: 20px solid #0ae5f0;
+            padding-right:calc(10%-20px);
+            padding-left:calc(10%-20px);
+        }
+
+        #featured p, #welcome p{
+            font-size:1.5rem
+        }
+}
+
+
+/*one-column layout for mobile*/
+.container{
+    padding:0;
+}
+
+/*3 column, 1 row layout for desktop and tablet*/
+@media screen and (min-width: 768px) {
+        .container{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding:0 20px;
+        background-color:#cccccc;
+    }
+}
+
+/*article background set to white*/
+.block{
+    height: auto;
+    margin:5% 0;
+    padding:5px 20px;
+    background-color:white;
+}
+
+@media screen and (min-width: 768px) {
+ .block{
+    width: 33.3%;
+    margin:20px 0;
+    padding:0;
+}
+
+ .block h2 {
+     padding:0 20px;
+ }        
+    
+}
+
+.article {
+    width: calc(100%-10px);
+    height: auto;
+    
+}
+
+#industry{
+    color:white;
+    background-color:brown;
+}
+
+#tech{
+    color:white;
+    background-color:black;
+}
+
+#career{
+    color:white;
+    background-color:purple;
+}
+
+@media screen and (min-width: 768px) {
+.article{
+    padding:20px;}
+}
+
+.artImg{
+   width: 100%; 
+   height:auto;
+}
+
+.video{
+   width: 100%; 
+   height:calc(100vw*.5);
+}
+
+#readAssist {
+    background-color:white;
+}
